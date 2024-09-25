@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+/* .links {
+  display: flex;
+  justify-content: space-around;
+} */
+
+
+body {
+background-image: url(https://images.unsplash.com/photo-1492112007959-c35ae067c37b?q=80&w=1884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+font-family: "Inter", sans-serif;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: azure;
+  margin-bottom: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 2.5rem 0;
+  margin: 0 auto;
+  /* background-color: transparent; */
+  align-content: center;
+  min-height: 90vh;
+  
+}
+
+.wrapper {
+  align-content: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 1.5rem;
+}
+
+.card {
+  flex: 1 1 350px;
+  height: 250px;
+  /* flex-basis: 350px; */
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  border: solid 1px azure;
+}
+.card:hover {
+  border: solid 2px rgb(235, 107, 33);
+}
+.link {
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0px;
+  left: 0px;
+  transition: all 250ms ease-in-out;
+}
+.card:hover .img {
+  scale: 1.1;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  color: white;
+  padding: 0 1rem;
+}
+.card .arrow {
+  transform: translateX(-55px);
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.card:hover .arrow {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.card::before {
+  position: absolute;
+  content: '';
+  width: 55px;
+  aspect-ratio: 1/1;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgb(235, 107, 33);
+  z-index: 1;
+  border-top-left-radius: 8px;
+  transform: translateX(55px);
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.card:hover.card::before {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.card::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 125%;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.99) 0%, rgba(0,0,0,0) 100%);
+  transition: all 250ms ease-in-out;
+}
+.card:hover.card::after {
+  height: 100%;
+}
+
+.one {
+  background-color: red;
+}
+.two {
+  background-color: aquamarine;
+}
+.three {
+  background-color: chartreuse;
+}
+.four {
+  background-color: chocolate;
+}
+.five {
+  background-color: rgb(24, 5, 167);
+}
