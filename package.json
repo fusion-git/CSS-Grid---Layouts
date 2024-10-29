@@ -1,0 +1,17 @@
+{
+  "name": "css-grid-layouts",
+  "version": "1.0.0",
+  "description": "This project run a simple index.html file with minimal assets like css or javascript. You can just open that file but I highly recommend you to setup a proper environment . <br /> <br />",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
